@@ -11,3 +11,5 @@ html = response.read()
 file_object = open('v/index.html', 'w')
 file_object.write(html)
 file_object.close()
+
+print "Done...\n"
