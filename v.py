@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: <ascii> -*-
+# -*- coding: <utf-8> -*-
 
 import urllib2
 import urllib2
