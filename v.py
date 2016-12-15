@@ -27,7 +27,9 @@ def GetWBDetail():
 htmlItems = GetWBDetail()
 
 f = open('v/index.html', 'w')
-f.write(htmlItems)
+for item in htmlItems:
+    f.write(item)
+#f.write(htmlItems)
 f.close()
 
 print "Done..."
