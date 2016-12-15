@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: <utf-8> -*-
+
 
 import urllib2
 import urllib2
@@ -15,9 +15,9 @@ def GetWBDetail():
     response = urllib2.urlopen(request)
     pagecontent = response.read()
 
-    unicodecontent = pagecontent.decode("utf-8")
+    #unicodecontent = pagecontent.decode("utf-8")
 
-    rawItems = re.findall('<div class="WB_detail">.*?<div class="WB_from S_txt2">(.*?)</div>.*?<div class="WB_text W_f14" node-type="feed_list_content">(.*?)</div>',unicodecontent,re.S)
+    rawItems = re.findall('<div class="WB_detail">.*?<div class="WB_from S_txt2">(.*?)</div>.*?<div class="WB_text W_f14" node-type="feed_list_content">(.*?)</div>',pagecontent,re.S)
     items = []
     for item in rawItems:
         items.append([item[0],item[1]])
