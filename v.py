@@ -28,7 +28,7 @@ htmlItems = GetWBDetail()
 
 f = open('v/index.html', 'w')
 for item in htmlItems:
-    f.write(item)
+    f.write("".join(item))
 #f.write(htmlItems)
 f.close()
 
