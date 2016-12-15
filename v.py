@@ -20,7 +20,7 @@ def GetWBDetail():
     rawItems = re.findall('<div class="WB_detail">.*?<div class="WB_from S_txt2">(.*?)</div>.*?<div class="WB_text W_f14" node-type="feed_list_content">(.*?)</div>',unicodecontent,re.S)
     items = []
     for item in rawItems:
-        items.append([item[0],item[1])
+        items.append([item[0],item[1]])
     return items
 
 
