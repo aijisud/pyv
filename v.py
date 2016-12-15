@@ -20,6 +20,9 @@ def GetWBDetail():
     rawItems = re.findall('<div class="WB_detail">.*?<div class="WB_from S_txt2">(.*?)</div>.*?<div class="WB_text W_f14" node-type="feed_list_content">(.*?)</div>',pagecontent,re.S)
     items = []
     for item in rawItems:
+        print item[0]
+        print item[i]
+        print "*****************************"
         items.append([item[0],item[1]])
     return items
 
@@ -32,4 +35,7 @@ for item in htmlItems:
 #f.write(htmlItems)
 f.close()
 
+print "Done..."
+print "Done..."
+print "Done..."
 print "Done..."
